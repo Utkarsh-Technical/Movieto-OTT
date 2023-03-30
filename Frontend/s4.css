@@ -1,0 +1,235 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'Marcellus', serif;
+	letter-spacing: 1px;
+}
+
+.start {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(Images/channels-bg.jpg);
+	background-size: cover;
+	background-position: center;
+	padding: 10px 8%;
+	position: relative;
+}
+
+/* top header */
+.header {
+	width: 100%;
+	height: 20%;
+	/* margin-top: 2%; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.top_logo {
+	height: 46%;
+	width: 5%;
+}
+
+.top_logo img {
+	width: 90%;
+}
+
+.top_heading a {
+	text-decoration: none;
+}
+
+.top_heading h1 {
+	text-transform: uppercase;
+	color: whitesmoke;
+	font-size: 40px;
+}
+
+h3 {
+	transform: translate(10px, -66px);
+	margin-bottom: -10%;
+	position: relative;
+	text-align: center;
+	color: whitesmoke;
+	font-size: 22px;
+}
+
+/* bouncing logo styling */
+
+.custom-btn {
+	/* width: 130px; */
+	height: 40px;
+	color: #fff;
+	border: none;
+	/* padding: 8px 8px; */
+	font-weight: 900;
+	font-size: 20px;
+	background: transparent;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+	outline: none;
+}
+
+.custom-btn:hover {
+	text-shadow: 2px 2px 5px #2980B9;
+}
+
+.image img {
+	border-width: 4px;
+	border-style: solid;
+	border-image: linear-gradient(45deg, #2980B9, #6DD5FA, #FFFFFF) 1;
+	width: 100%;
+	object-fit: cover;
+	height: 100%;
+}
+
+.container {
+	max-width: 1300px;
+	margin: 0px auto 0px auto;
+	padding: 0px 40px;
+}
+
+@media (min-width: 1200px) and (max-width: 1441px) {
+	.container {
+		max-width: 1250px;
+		padding: 0px 36px;
+	}
+}
+
+@media (max-width: 767px) {
+	.container {
+		padding: 0px 30px;
+	}
+}
+
+@media (max-width: 479px) {
+	.container {
+		padding: 0px 30px 0px 20px;
+	}
+}
+
+.skills {
+	padding: 50px 0px;
+}
+
+.skills .skills-flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 50px;
+	width: 100%;
+}
+
+@media (max-width: 700px) {
+	.skills .skills-flex-container {
+		gap: 30px;
+	}
+}
+
+.skills .skills-flex-container .box {
+	flex: 1 1 15%;
+	background: transparent;
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 24px;
+	padding: 25px;
+	text-align: center;
+	transition: all 0.3s ease-in;
+}
+
+.skills .skills-flex-container .box .image {
+	transition: all 0.3s ease-in-out 0.1s;
+}
+
+.skills .skills-flex-container .box .image img {
+	max-width: 75px;
+	object-fit: contain;
+}
+
+.skills .skills-flex-container .box .title {
+	margin-top: 15px;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	transition: all 0.3s ease-in-out;
+}
+
+.skills .skills-flex-container .box:hover {
+	box-shadow: rgba(0, 0, 0, 0.5) 20px 20px 30px;
+	transform: scale(1.1);
+}
+
+.skills .skills-flex-container .box:hover .image {
+	transform: scale(1.5) translateY(-20px);
+}
+
+.skills .skills-flex-container .box:hover .image img {
+	animation: bouncing 0.5s 0.3s;
+}
+
+.skills .skills-flex-container .box:hover .title {
+	letter-spacing: 2px;
+}
+
+@media (max-width: 1100px) {
+	.skills .skills-flex-container .box {
+		flex: 1 0 25%;
+	}
+}
+
+@media (max-width: 630px) {
+	.skills .skills-flex-container .box {
+		flex: 1 0 35%;
+		padding: 15px;
+	}
+
+	.skills .skills-flex-container .box .image img {
+		max-width: 50px;
+	}
+}
+
+@keyframes bouncing {
+
+	from,
+	to {
+		transform: scale(1, 1);
+	}
+
+	25% {
+		transform: scale(0.9, 1.1);
+	}
+
+	50% {
+		transform: scale(1.1, 0.9);
+	}
+
+	75% {
+		transform: scale(0.95, 1.05);
+	}
+}
+
+/* footer styling */
+.footer {
+	width: 100%;
+	text-align: right;
+	margin-bottom: 1%;
+}
+
+.footer a {
+	margin-right: 2%;
+	text-decoration: none;
+	font-size: 30px;
+	background-image: linear-gradient(45deg, #2980B9, #6DD5FA, #FFFFFF);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+}
+
+.fa-arrow-right {
+	margin-left: 1%;
+}
