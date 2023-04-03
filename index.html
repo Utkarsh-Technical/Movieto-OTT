@@ -58,5 +58,27 @@
         </div> 
     </div>
 </body>
-<script src="index.js"></script>
+<script>
+    
+    // Get all the box elements
+    const boxes = document.querySelectorAll('.card');
+    // Loop through the box elements and add an event listener to each one
+    boxes.forEach(function(box) {
+    box.addEventListener('click', function(event) {
+        // Get the ID of the clicked box element
+        const genres = event.target.id;
+
+        // Log the ID of the clicked box element to the console
+        console.log("Genres Selected: "+genres);
+
+        //redirect to the new screen.
+        window.location.href = "Screen2.html";
+        });
+    });
+
+    // Export the JavaScript
+    module.exports = {
+        genres: "Hello"
+    }
+</script>
 </html>

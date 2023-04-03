@@ -84,5 +84,23 @@
     </div>
   </div>
 </body>
-<script src="index.js"></script>
+<script>
+  // Get all the div elements by class name
+  var divs = document.getElementsByClassName("box");
+  var buttonId ="Hello"
+  // Add an event listener to each div
+  for (var i = 0; i < divs.length; i++) {
+    divs[i].addEventListener("click", function(event) {
+      // Get the ID of the button that was clicked
+      buttonId = event.currentTarget.id;
+      console.log("Button clicked in div with ID: " + event.currentTarget.id);
+      });
+  }
+
+    // Export the JavaScript
+    module.exports = {
+          Ott: "Ott"
+      }
+
+</script>
 </html>
